@@ -1,0 +1,245 @@
+body {
+    margin: 0%;
+    background-color: #16161D;
+}
+
+* {
+    font-family: monospace;
+}
+
+button {
+    box-shadow: 2px 2px #416b5a;
+    border-radius: 2px;
+    filter: brightness(50%);
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+strong {
+    font-size: medium;
+}
+
+li {
+    cursor: pointer;
+}
+
+#sendMSG {
+    position: absolute;
+    filter: brightness(50%);
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+#msgWPP {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: #16161D;
+    box-shadow: 2px 2px 2px 2px #103928;
+    color: #ffffff;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#themeStyle {
+    position: absolute;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    bottom: 1%;
+    color: white;
+    font-size: small;
+    border: none;
+    box-shadow: none;
+}
+
+.whiteTheme {
+    background-color: floralwhite;
+}
+
+.whiteTheme #texto {
+    background-color: #25d366;
+    color: #ffffff;
+    filter: none;
+}
+
+.whiteTheme #msgWPP {
+    box-shadow: 1px 1px #25d366;
+    background-color: floralwhite;
+    color: black;
+}
+
+.whiteTheme #logArea {
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: floralwhite;
+    color: black;
+}
+
+.whiteTheme #sendMSG {
+    filter: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.whiteTheme #abaOpt {
+    background-color: floralwhite;
+    box-shadow: 3px 3px #25d366;
+}
+
+.whiteTheme #options {
+    color: black;
+}
+
+.whiteTheme button {
+    filter: brightness(100%);
+    box-shadow: 2px 2px #25d366;
+    color: black;
+}
+
+#abaOpt {
+    background-color: #16161D;
+    color: floralwhite;
+    box-shadow: 3px 3px #103928;
+
+}
+
+.activeOption {
+    background-color: #103928;
+    color: floralwhite;
+    border-radius: 5px;
+}
+
+#options {
+    text-align: left;
+    list-style: square;
+    font-size: x-small;
+    filter: brightness(50%);
+    width: max-content;
+    border-radius: 5px;
+}
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    box-shadow: none;
+    border: none;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #075e54;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+}
+
+.whiteTheme #sendMSG {
+    box-shadow: none;
+}
+
+.whiteTheme .Btn:hover .svgContainer {
+    background-color: black;
+}
+
+.scriptOpt {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+}
+
+#crypto {
+    position: absolute;
+    left: 1%;
+    box-shadow: 0px 2px 2px 0px #416b5a;
+    font-size: small;
+}
+
+#decrypt {
+    position: absolute;
+    right: 1%;
+    box-shadow: 0px 2px 2px 0px #416b5a;
+    font-size: small;
+}
+
+#showLog_btn {
+    position: absolute;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    left: 2%;
+    top: 50%;
+    box-shadow: none;
+}
+
+#logArea {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: #16161D;
+    box-shadow: 2px 2px 2px 2px white;
+    color: #ffffff;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: scroll;
+}
+
+#logArea :hover {
+    cursor: text;
+    opacity: 100%;
+}
